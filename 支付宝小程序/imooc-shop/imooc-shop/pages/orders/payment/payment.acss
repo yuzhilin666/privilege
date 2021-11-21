@@ -1,0 +1,75 @@
+page {
+  display: flex;
+  flex-direction: column;       /* 整体竖向排列 */
+  background-color: #f2f5f8;
+  /* 解决底部遮挡问题 */
+  padding-bottom: 100rpx;
+}
+
+/* 支付方式 start */
+.payments {
+  margin-top: 10rpx;
+  background-color: white;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  padding-bottom: 26rpx;
+}
+.payment-ico {
+  width: 44rpx;
+  height: 44rpx;
+}
+.choose-payment {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  color: gray;
+  margin-top: 16rpx;
+  line-height: 40rpx;
+}
+.payment-words {
+  margin-left: 20rpx;
+  flex-grow: 1;
+}
+.rdo-display {
+  margin-right: 20rpx;
+}
+/* end */
+
+
+/* 底部提交订单 start */
+.bottom-operator {
+    background-color: white;
+    height: 100rpx;
+    /* 固定底部不可滑动 */
+    position:fixed; 
+    bottom: 0;
+    width: 750rpx;
+    
+    display: flex;
+    flex-direction: row;
+}
+.total-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 36rpx 20rpx;
+  width: 65%;
+}  
+.total-words {
+  color: gray;
+}
+.total-amount {
+  color: #ff6699;
+  font-weight: bold;
+  margin-left: 10rpx;
+  font-size: 16px;
+}
+.submit-order {
+    color: white;
+    background-color: #ff6699;
+    width: 35%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100rpx;
+}
+/* end */

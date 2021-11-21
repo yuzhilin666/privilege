@@ -1,0 +1,21 @@
+<swiper 
+    indicator-dots="{{true}}"
+    indicator-color="yellow"
+    indicator-active-color="red"
+    autoplay="{{true}}" 
+    current="1"
+    interval="10000" 
+    duration="500"
+    circular="{{true}}"
+    vertical="{{true}}"
+    onChange="changeMe"
+    >
+
+    <swiper-item>
+      <image class="img" src="https://img3.sycdn.imooc.com/5bbf2def000118ab06000336-240-135.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image class="img" src="https://img1.mukewang.com/szimg/5bc3f1420001abf206000338.jpg" />
+    </swiper-item>
+    
+</swiper>

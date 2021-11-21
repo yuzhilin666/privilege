@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.imooc.mapper.AreaProvinceMapper" >
+  <resultMap id="BaseResultMap" type="com.imooc.pojo.AreaProvince" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="province_id" property="provinceId" jdbcType="INTEGER" />
+    <result column="province_name" property="provinceName" jdbcType="VARCHAR" />
+    <result column="spell" property="spell" jdbcType="VARCHAR" />
+    <result column="easy_spell" property="easySpell" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

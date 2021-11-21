@@ -1,0 +1,16 @@
+/**index.wxss**/
+.index{
+  background-color:#FFC93A;
+  height:100vh;
+}
+.btn-group{
+  padding-top:20rpx;
+  text-align:center;
+}
+.btn-pay{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.mb20{
+  margin-bottom: 20rpx;
+}

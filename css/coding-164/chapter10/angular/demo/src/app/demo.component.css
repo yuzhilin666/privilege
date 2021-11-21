@@ -1,0 +1,10 @@
+:host{
+  display: block;
+  padding:20px;
+}
+:host-context(h1) {
+  color: blue;
+}
+.demo{
+  color:red;
+}

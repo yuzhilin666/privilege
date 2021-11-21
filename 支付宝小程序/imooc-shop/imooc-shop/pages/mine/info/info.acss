@@ -1,0 +1,210 @@
+page {
+  display: flex;
+  flex-direction: column;   /* 整体竖向排列 */
+  background-color: #f2f5f8;
+}
+
+/* 用户未登录 start */
+.login-block {
+    background-color: white;
+    padding: 25rpx 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-login {
+    width: 70px;        /* 绝对设置宽度，避免不同手机屏幕的兼容性问题 */
+    color: white;
+    background-color: #ff6699;
+    font-size: 13px;
+    padding: 16rpx 30rpx;
+    margin-top: 20rpx;
+    border-radius: 25px;
+    text-align: center;
+}
+/* end */
+
+/* 个人信息 start */
+.userinfo {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 22rpx 14rpx;
+}
+.avatar {
+    width: 120rpx;
+    height: 120rpx;
+    margin-right: 20rpx;
+    border-radius: 50%;
+}
+.user-words {
+    display: flex;
+    flex-direction: column;
+    width: 530rpx;
+}
+.nickname {
+    font-size: 20px;
+    margin-top: 12rpx;
+}
+.ico-block {
+    display: flex;
+    flex-direction: row;
+}
+.vipcard-ico {
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: 10rpx;
+}
+.certified-ico {
+    width: 101rpx;
+    height: 64rpx;
+}
+.set-ico {
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: 12rpx;
+    
+}
+/* end */
+
+/* 历史订单切换tab */
+.order-tab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    margin-top: 20rpx;
+    padding: 22rpx 16rpx;
+}
+
+.every-status {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-status-ico {
+    width: 40rpx;
+    height: 40rpx;
+    align-self: center;
+}
+
+.status-words {
+    margin-top: 10rpx;
+    font-size: 13px;
+    color: #868585;
+}
+
+
+/* 订单信息 start */
+.orders {
+  margin-top: 20rpx;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 20rpx;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+  margin-top: 10rpx;
+  padding-bottom: 20rpx;
+}
+.items-cover {
+    width: 150rpx;
+    height: 200rpx;
+    margin-left: 10rpx;
+    border-radius: 3px;
+    
+}
+.item-title {
+  font-size: 14px;
+  width: 410rpx;
+  margin-left: 20rpx;  
+}
+.price-info {
+  font-size: 13px;
+}
+.item-old-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.item-old-price {
+  font-size: 12px;
+  color: gray;
+  text-decoration-line: line-through;     /* 定义删除线 */
+}
+.item-price {
+    margin-top: 6rpx;
+}
+.item-counts {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20rpx;
+}
+/* end */
+
+/* 下边框横线(分割线) start */
+.splitter {
+  border-bottom: solid 1rpx;
+  border-color: #e6e6e6;
+}
+/* end */
+
+/* 待付款 start */
+.money-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: white;
+    padding-right: 20rpx;
+    /* padding-bottom: 20rpx;  */
+}
+.normal-words {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    /* 竖向居中 */
+}
+.gray-words {
+    margin-left: 20rpx;
+    color: gray;
+    font-size: 13px;
+}
+.money-words {
+   font-size: 20px;
+   color: #ff6699; 
+}
+.go-pay {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20rpx;
+}
+.btn-pay {
+    color: white;
+    background-color: #ff6699;
+    font-size: 13px;
+    padding: 12rpx 40rpx;
+    margin-top: 20rpx;
+    border-radius: 25px;
+}
+.btn-cancel {
+    color: #3a3932;
+    background-color: #ffe817;
+    font-size: 13px;
+    padding: 12rpx 40rpx;
+    margin-top: 20rpx;
+    margin-right: 10rpx;
+    border-radius: 25px;
+}
+.status-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10rpx;
+}
+/* end */

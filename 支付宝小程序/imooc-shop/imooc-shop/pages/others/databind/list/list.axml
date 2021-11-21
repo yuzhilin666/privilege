@@ -1,0 +1,24 @@
+<!-- <view a:for="{{student.courses}}" class="demo-words">
+  下标：{{index}},
+  课程名：{{item.name}},
+  节数：{{item.counts}}
+</view> -->
+
+<!-- <view a:for="{{student.courses}}" 
+      a:for-item="lesson" 
+      a:for-index="i" 
+      class="demo-words">
+  下标：{{i}},
+  课程名：{{lesson.name}},
+  节数：{{lesson.counts}}
+</view> -->
+
+
+<block a:for="{{student.courses}}" 
+      a:for-item="lesson" 
+      a:for-index="i" 
+      class="demo-words">
+  <view class="demo-words">下标：{{i}},
+  课程名：{{lesson.name}},
+  节数：{{lesson.counts}}</view>
+</block>

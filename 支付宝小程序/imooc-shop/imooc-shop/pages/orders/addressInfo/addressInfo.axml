@@ -1,0 +1,58 @@
+<form onSubmit="submitAddress">
+    <view class="myaddress">
+        <view class="address-line border-line">
+            <view class="ico-label">
+                <image src="/resources/icon/smallIco/address-person.png" class="address-ico"/>
+                <view class="address-lable">                    
+                    收货人:                
+                </view>
+            </view>
+            <view>
+                <input type="text" name="receiver" maxlength="6" class="user-address" value="{{address.receiver}}"/>
+            </view>
+        </view>
+
+        <view class="address-line border-line">
+            <view class="ico-label">
+                <image src="/resources/icon/smallIco/address-mobile.png" class="address-ico"/>
+                <view class="address-lable">                    
+                    手机号:                
+                </view>
+            </view>
+            <view>
+                <input type="digit" name="mobile" maxlength="11" class="user-address" value="{{address.mobile}}"/>
+            </view>
+        </view>
+
+        <!-- <view class="address-line border-line">
+            <view class="ico-label">
+                <image src="/resources/icon/smallIco/address-city.png" class="address-ico"/>
+                <view class="address-lable">				            
+                    所在城市:				        
+                </view>
+            </view>
+            <view onTap="tempChooseCity">
+                <view class="area-choose">北京</view>
+            </view>
+        </view> -->
+        <citys txtCityOut="{{address.city}}"/>
+
+        <view class="address-line">
+            <view class="ico-label">
+                <image src="/resources/icon/smallIco/address-desc.png" class="address-ico"/>
+                <view class="address-lable">                    
+                    详细地址:                
+                </view>
+            </view>
+            <view>
+                <input type="text" name="descAddress" maxlength="50" 
+                            class="user-address" style="width:500rpx;" value="{{address.descAddress}}"/>
+            </view>
+        </view>
+    </view>
+
+    <!-- 底部 完成 -->
+    <view class="bottom-done">
+        <button type="default" class="done" form-type="submit"> 完  成 </button>
+    </view>
+</form>

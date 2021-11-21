@@ -1,0 +1,9 @@
+<scroll-view class="scrollView" scroll-x="{{true}}">
+
+  <view class="item1"></view>
+  <view class="item2"></view>
+  <view class="item3"></view>
+  <view class="item4"></view>
+  <view class="item5"></view>
+
+</scroll-view>

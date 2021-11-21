@@ -1,0 +1,19 @@
+<!--pages/pay/index.wxml-->
+<view class="recharge">
+    <view class="recharge-box">
+      <view class='title'>充值金额</view>
+      <view class="input-box">
+        <input class="input" type="number" placeholder="请输入充值金额"/>
+      </view>
+      <view class="item-num">
+        <view class="num checked">1分</view>
+        <view class="num">2毛</view>
+      </view>
+      <view class="item-num">
+        <view class="num">1元</view>
+        <view class="num">5元</view>
+      </view>
+      <view class="btn btn-primary btn-recharge" bindtap="pay">充值</view>
+      <view class='tip'>点击充值即表示已阅读并同意<view class='protocol'>充值协议</view></view>
+    </view>
+  </view>

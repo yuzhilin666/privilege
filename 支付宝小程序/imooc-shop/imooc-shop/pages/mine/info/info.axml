@@ -1,0 +1,116 @@
+<!-- 用户未登录的时候显示 -->
+<view class="login-block" hidden="{{userLogin}}">
+    <view class="btn-login" onTap="login">请登录</view>
+</view>
+
+<!-- 个人信息 用户已登录后显示 -->
+<view class="userinfo" hidden="{{userNotLogin}}">
+    <image class="avatar" src="{{userInfo.faceImage}}"></image>
+    <view class="user-words">
+        <view class="nickname">{{userInfo.nickname}}</view>
+        <view class="ico-block">
+            <image src="/resources/icon/smallIco/vip.png" class="vipcard-ico"/>
+            <block a:if="{{userInfo.isCertified == 1}}">
+                <image src="/resources/icon/smallIco/certified.png" class="certified-ico"/>
+            </block>    
+        </view>
+    </view>
+    <image class="set-ico" src="/resources/icon/smallIco/settings.png" onTap="logout"></image>
+</view>
+
+<!-- 历史订单 -->
+<view class="order-tab">
+
+    <view class="every-status" onTap="queryOrder" data-orderIndex="0" data-orderStatus="0">        
+        <image 
+            src='/resources/icon/smallIco/orderstatus/all{{orderIndex == 0 ? "-sel" : ""}}.png' 
+            class="order-status-ico" />
+        <view class="status-words" style='color: {{orderIndex == 0 ? "#ff6699" : "#868585"}}'>全 部</view>
+    </view>
+
+    <view class="every-status" onTap="queryOrder" data-orderIndex="1" data-orderStatus="10">
+        <image src='/resources/icon/smallIco/orderstatus/wait-pay{{orderIndex == 1 ? "-sel" : ""}}.png' class="order-status-ico" />
+        <view class="status-words" style='color: {{orderIndex == 1 ? "#ff6699" : "#868585"}}'>待付款</view>
+    </view>
+    
+    <view class="every-status" onTap="queryOrder" data-orderIndex="2" data-orderStatus="20">
+        <image src='/resources/icon/smallIco/orderstatus/wait-receive{{orderIndex == 2 ? "-sel" : ""}}.png' class="order-status-ico" />
+        <view class="status-words" style='color: {{orderIndex == 2 ? "#ff6699" : "#868585"}}'>待收货</view>
+    </view>
+        
+    <view class="every-status" onTap="queryOrder" data-orderIndex="3" data-orderStatus="40">
+        <image src='/resources/icon/smallIco/orderstatus/done{{orderIndex == 3 ? "-sel" : ""}}.png' class="order-status-ico" />
+        <view class="status-words" style='color: {{orderIndex == 3 ? "#ff6699" : "#868585"}}'>已完成</view>
+    </view>
+        
+    <view class="every-status" onTap="queryOrder" data-orderIndex="4" data-orderStatus="50">
+        <image src='/resources/icon/smallIco/orderstatus/canceled{{orderIndex == 4 ? "-sel" : ""}}.png' class="order-status-ico" />
+        <view class="status-words" style='color: {{orderIndex == 4 ? "#ff6699" : "#868585"}}'>已取消</view>
+    </view>
+
+</view>
+
+
+
+<!-- 循环订单 -->
+<block a:for="{{orderList}}" a:for-item="order">
+  <view class="orders">
+
+    <block a:if="{{order.status == 40}}">
+        <view class="status-block splitter">
+          <view class="gray-words">交易完成</view>
+        </view>
+    </block>
+    <block a:if="{{order.status == 50}}">
+        <view class="status-block splitter">
+          <view class="gray-words">已取消</view>
+        </view>
+    </block>
+
+    <block a:for="{{order.subItemsList}}" a:for-item="item">
+        <view class="item splitter">
+          <image src="{{item.itemImage}}" class="items-cover"/>
+          <view class="item-title">
+              {{item.itemName}}
+          </view>
+          <view class="price-info">
+              <view class="item-price">
+                  ￥{{item.priceY}}
+              </view>
+              <view class="item-counts">
+                  <view>{{item.buyCounts}}</view>
+                  <view>件</view>
+              </view>
+          </view>
+        </view>
+    </block>
+        
+        
+      <view class="money-block splitter">
+        <view class="normal-words">
+          <view class="gray-words">全国包邮</view>
+          <view class="gray-words">总计:</view>
+        </view>
+        <view>
+          <view class="money-words">￥{{order.amountY}}</view>
+        </view>
+      </view>
+      
+      <view class="go-pay">
+
+        
+        <block a:if="{{order.status == 10}}">
+            <view class="btn-cancel" onTap="cancelOrder" data-orderId="{{order.id}}">取消订单</view>
+            <view class="btn-pay" onTap="payAgain" data-orderId="{{order.id}}">付 款</view>
+        </block>
+        <block a:if="{{order.status == 20}}">
+            <view class="btn-pay" onTap="confirmAccept" data-orderId="{{order.id}}">确认收货</view>
+        </block>
+    
+        
+      </view>
+    </view>
+  </view>
+
+</block>
+

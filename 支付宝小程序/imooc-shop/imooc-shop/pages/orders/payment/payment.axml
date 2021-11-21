@@ -1,0 +1,19 @@
+<!-- 支付方式 -->
+<view class="payments">
+    <view class="choose-payment">
+        <image src="/resources/icon/smallIco/alipay.png" class="payment-ico"/>
+        <view class="payment-words">            支付宝支付        </view>
+        <view class="rdo-display">
+            <radio value="" checked/>
+        </view>
+    </view>
+</view>
+
+<!-- 底部提交订单 -->
+<view class="bottom-operator">
+    <view class="total-info">
+        <view class="total-words">        总支付:    </view>
+        <view class="total-amount">        ￥{{orderAmount}}    </view>
+    </view>
+    <view class="submit-order" onTap="doAlipay">    付 款  </view>
+</view>

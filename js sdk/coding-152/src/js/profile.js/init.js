@@ -1,0 +1,1 @@
+import { regInfo } from '../register/info/init.js';

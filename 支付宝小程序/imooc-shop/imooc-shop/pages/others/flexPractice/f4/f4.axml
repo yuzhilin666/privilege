@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="row1">
+    <view class="point"></view>
+  </view>
+  <view class="row2">
+    <view class="point"></view>
+  </view>
+  <view class="row3">
+    <view class="point"></view>
+  </view>
+  <view class="row4">
+    <view class="point"></view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<image 
+  src="https://img3.sycdn.imooc.com/5bbf2def000118ab06000336-240-135.jpg" 
+  class="img"
+  style=""
+  lazyLoad="{{true}}"
+  onError="imgError"
+  onLoad="imgLoad"
+  />

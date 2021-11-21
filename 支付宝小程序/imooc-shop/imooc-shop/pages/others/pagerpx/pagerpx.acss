@@ -1,0 +1,9 @@
+.block {
+    /* 以iPhone6为例，iPhone6的固定宽度为375px */
+    /* width: 375px;
+    height: 375px; */
+    /* 自适应，自动拉伸或者扩展，形成一个自适应的正方形 */
+    width: 750rpx;
+    height: 750rpx;
+    background-color: #c9394a;
+}

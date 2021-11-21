@@ -1,0 +1,44 @@
+    
+<radio-group onChange="setDefault">
+    <block a:for="{{addressList}}" a:for-item="address">
+        <view class="address-outter" 
+                    style="border-style:dashed;
+                    border-color:#ff6699; 
+                    border-width:{{defaultChoose == index ? 2 : 0}}px;">
+            <view class="address-info" onTap="chooseMe" data-clickIndex={{index}}>
+                <view class="address-line">
+                    <view>{{address.receiver}}</view>
+                    <view>{{address.mobile}}</view>
+                </view>
+                <view class="address-desc">
+                    {{address.city}}{{address.descAddress}}                  
+                </view>
+            </view>
+            <view class="operator">
+                <view class="set-default">
+                    <label>
+                        <radio class="rdo-default" value="{{address.id}}" 
+                                checked="{{defaultRdoChoose == index ? true : false}}"/> 设为默认                        
+                    </label>
+                </view>
+                <view class="oper-block">
+                    <image src="/resources/icon/smallIco/modify.png" class="oper-ico"/>
+                    <view class="display-words" data-addressId="{{address.id}}" onTap="modifyMe">编辑</view>
+                </view>
+                <view class="oper-block">
+                    <image src="/resources/icon/smallIco/delete.png" class="oper-ico"/>
+                    <view class="display-words" data-addressId="{{address.id}}" onTap="deleteMe">删除</view>
+                </view>
+            </view>
+        </view>
+    </block>
+</radio-group>
+<!-- 底部操作按钮 -->
+<view class="bottom-operator">
+    <view class="confirm-choose" onTap="confirmChoose">        
+        确认选择    
+    </view>
+    <view class="add-new-address" onTap="addNewAddress">        
+        新增地址    
+    </view>
+</view>

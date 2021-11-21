@@ -1,0 +1,36 @@
+<view class="demo-words" onTap="tap">
+  点击事件
+</view>
+
+<view class="demo-words" catchLongTap="longTap" style="margin-top:30px;">
+  长按点击事件
+</view>
+
+<view class="demo-words" catchTouchStart="touchStart" style="margin-top:30px;">
+  开始触摸
+</view>
+
+<view class="demo-words" catchTouchMove="touchMove" style="margin-top:30px;">
+  触摸后移动
+</view>
+
+<view class="demo-words" onTouchEnd="touchEnd" style="margin-top:30px;">
+  触摸结束（人为结束，手指放开）
+</view>
+
+<view class="demo-words" onTouchCancel="touchCancel" style="margin-top:30px;">
+  触摸中断（非正常结束，比如手机来电）
+</view>
+
+
+<view class="demo-words" 
+      onTap="tapData" 
+      data-name="imooc"
+      data-age="18"
+      data-userNickName="jack"
+      data-alphaBeta="1"
+      data-alpha-bbeta="2"
+      data-userage="28"
+      style="margin-top:50px;">
+  测试数据集 dataset
+</view>

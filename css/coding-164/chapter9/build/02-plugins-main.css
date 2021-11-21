@@ -1,0 +1,16 @@
+/* css-reset */
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    margin: 10px 20px 10px 20px;
+    font-size:14px;
+}
+body{
+    background-color:#ffffff;
+}
+.box{
+    -webkit-box-shadow: 0 0 3px rgba(255,255,255, .3);
+            box-shadow: 0 0 3px rgba(255,255,255, .3);
+}

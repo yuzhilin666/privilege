@@ -1,0 +1,36 @@
+.scrollView {
+    height: 250rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.item1 {
+    width: 200rpx;
+    height: 250rpx;
+    background: red;
+    flex-shrink: 0;
+}
+.item2 {
+    width: 200rpx;
+    height: 250rpx;
+    background: blue;
+    flex-shrink: 0;
+}
+.item3 {
+    width: 200rpx;
+    height: 250rpx;
+    background: yellow;
+    flex-shrink: 0;
+}
+.item4 {
+    width: 200rpx;
+    height: 250rpx;
+    background: green;
+    flex-shrink: 0;
+}
+.item5 {
+    width: 200rpx;
+    height: 250rpx;
+    background: pink;
+    flex-shrink: 0;
+}

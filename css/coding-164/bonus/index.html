@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet"href="./style.css">
+	<title>全面深入讲解CSS</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="user">
+				<a href="#" id="login">登录</a>
+			</div>
+			<ul>
+				<li><a href="#">CSS基础知识</a></li>
+				<li><a href="#">效果与动画</a></li>
+				<li><a href="#">工具与工程化</a></li>
+			</ul>
+		</nav>
+		<div class="headerMain">
+			<ul class="introduction">
+				<li>- 2017年末新课</li>
+				<li>- 前端看家本领</li>
+				<li>- 全面深入的讲解</li>
+			</ul>
+			<h1>全面深入讲解CSS</h1>
+		</div>
+	</header>
+	<section class="banner fadeIn">
+		<ul>
+			<li>
+				<div class="feature feature1"></div>
+				<p>特点1</p>
+			</li>
+			<li>
+				<div class="feature feature2"></div>
+				<p>特点2</p>
+			</li>
+			<li>
+				<div class="feature feature3"></div>
+				<p>特点3</p>
+			</li>
+		</ul>
+	</section>
+	<section class="main fadeIn fadeInDelay">
+		<div class="block block1">
+			<img src="./1.png">
+			<div class="blockText">
+				<h2>知识全面讲解</h2>
+				<ul>
+					<li>- 核心知识全面覆盖</li>
+					<li>- 涉猎非核心知识</li>
+					<li>- 无用知识看一看</li>
+				</ul>
+			</div>
+		</div>
+		<div class="block block1">
+			<div class="blockText">
+				<h2>知识深入讲解</h2>
+				<ul>
+					<li>- 以点带面</li>
+					<li>- 知识讲解清楚深入</li>
+					<li>- 没讲的知识也深入</li>
+				</ul>
+			</div>
+			<img src="./2.png">
+		</div>
+	</section>
+	<footer>
+		<div class="footerContent">
+			TooBug @ 2018
+		</div>
+	</footer>
+	<div class="progress"></div>
+
+	<div class="dialogWrapper">
+		<div class="mask"></div>
+		<div class="dialog">
+			<div class="title">登录</div>
+			<div class="body">
+				<form>
+					<ul>
+						<li>
+							<label>用户名</label>
+							<input type="text" name="username"/>
+						</li>
+						<li>
+							<label>密码</label>
+							<input type="password" name="password"/>
+						</li>
+						<li class="operateWrapper">
+							<button id="cancelDialog">取消</button>
+							<button class="primary">登录</button>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		function showProgress(){
+			document.querySelector('.progress').classList.add('show');
+		}
+		function hideProgress(){
+			document.querySelector('.progress').classList.remove('show');
+		}
+
+		// 点击登录按钮
+		document.querySelector('#login').addEventListener('click', function(e){
+			showProgress();
+			setTimeout(function(){
+				hideProgress();
+				document.querySelector('.dialogWrapper').classList.add('show');
+			}, 3000);
+			e.preventDefault();
+		});
+		// 点击取消按钮
+		document.querySelector('#cancelDialog').addEventListener('click', function(e){
+			document.querySelector('.dialogWrapper').classList.remove('show');
+			e.preventDefault();
+		});
+	</script>
+</body>
+</html>

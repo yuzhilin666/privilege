@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/query/category/category",
+    "pages/others/components/scrollView/scrollView",
+    "pages/others/components/swiper/swiper",
+    "pages/others/components/imgmode/imgmode",
+    "pages/others/components/img/img",
+    "pages/others/pagerpx/pagerpx",
+    "pages/others/events/events",
+    "pages/others/databind/ifelse/ifelse",
+    "pages/others/databind/list/list",
+    "pages/others/databind/basic/basic",
+    "pages/others/flexPractice/f6/f6",
+    "pages/others/flexPractice/f5/f5",
+    "pages/others/flexPractice/f4/f4",
+    "pages/others/flexPractice/f3/f3",
+    "pages/others/flexPractice/f2/f2",
+    "pages/others/flexPractice/f1/f1",
+    "pages/others/flex/flex",
+    "pages/shoppingCart/cart/cart",
+    "pages/mine/info/info",
+    "pages/others/hello/hello",
+    "pages/others/navigate/navigate",
+    "pages/query/list/list",
+    "pages/template/itemList/itemList",
+    "pages/query/item/item",
+    "pages/orders/confrimOrder/confrimOrder",
+    "pages/orders/addressList/addressList",
+    "pages/orders/addressInfo/addressInfo",
+    "pages/orders/payment/payment"
+  ],
+  "window": {
+    "defaultTitle": "慕课购物",
+    "titleBarColor": "#ffbfc7"
+  },
+  "tabBar": {
+    "textColor": "#8a8a8a",
+    "selectedColor": "#ff6699",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "icon": "resources/icon/tabBar/index.png",
+        "activeIcon": "resources/icon/tabBar/index-sel.png"
+      },
+      {
+        "pagePath": "pages/query/category/category",
+        "name": "分类",
+        "icon": "resources/icon/tabBar/category.png",
+        "activeIcon": "resources/icon/tabBar/category-sel.png"
+      },
+      {
+        "pagePath": "pages/shoppingCart/cart/cart",
+        "name": "购物车",
+        "icon": "resources/icon/tabBar/shopping-car.png",
+        "activeIcon": "resources/icon/tabBar/shopping-car-sel.png"
+      },
+      {
+        "pagePath": "pages/mine/info/info",
+        "name": "我的",
+        "icon": "resources/icon/tabBar/mine.png",
+        "activeIcon": "resources/icon/tabBar/mine-sel.png"
+      }
+    ]
+  }
+}

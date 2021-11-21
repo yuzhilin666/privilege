@@ -1,0 +1,10 @@
+<!--index.wxml-->
+ <view class="index">
+    <image src='/assets/images/header.png'/>
+    <view class="btn-group">
+      <button wx:if="{{!userId}}" class="single" style="width:80%;" type="primary" open-type="getUserInfo"  bindgetuserinfo="getUserInfo">微信登录</button>
+      <button wx:if="{{userId}}" class="btn" open-type="share">分享</button>
+      <button wx:if="{{userId}}" class="btn btn-primary btn-pay" bindtap="recharge">体验</button>
+      <button wx:if="{{userId}}" class="btn" bindtap="activity">活动详情</button>
+    </view>
+  </view>

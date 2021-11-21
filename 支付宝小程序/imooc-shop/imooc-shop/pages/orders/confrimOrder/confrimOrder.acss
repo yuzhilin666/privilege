@@ -1,0 +1,200 @@
+page {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f5f8;
+  /* 解决底部遮挡问题 */
+  padding-bottom: 100rpx;
+}
+
+/* 收货地址为空 start */
+.empty-address {
+  margin-top: 10rpx;
+  background-color: white;
+
+  display: flex;
+  flex-direction: row;
+  /* 纵轴垂直居中 */
+  align-items:center; 
+
+  padding-top: 30rpx;
+  padding-left: 20rpx;
+  padding-bottom: 30rpx;
+}
+.location-ico {
+  width: 40rpx;
+  height: 40rpx;
+  /* margin-left: 10rpx; */
+}
+.write-address {
+  color: gray;
+  font-size: 13px;
+  /* flex 子项的放大比例，撑满后，箭头就靠右了 */
+  flex-grow: 1;
+  margin-left: 10rpx;
+}
+.arrow-left-ico {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+/* end */
+
+/* 收货地址存在时 start */
+.full-address {
+  margin-top: 10rpx;
+  background-color: white;
+  padding-top: 30rpx;
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+}
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  margin-left: 60rpx;
+}
+
+.address-info {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  color: gray;
+  margin-top: 16rpx;
+  line-height: 40rpx;
+}
+.address-province {
+  margin-left: 20rpx;
+}
+.address-city {
+  margin-left: 10rpx;
+}
+.address-district {
+  margin-left: 10rpx;
+}
+.address-desc {
+  flex-grow: 1;
+}
+/* end */
+
+/* 订单商品 start */
+.orders {
+  margin-top: 20rpx;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 20rpx;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+  margin-top: 10rpx;
+}
+.items-cover {
+    width: 150rpx;
+    height: 200rpx;
+    margin-left: 10rpx;
+    border-radius: 3px;
+}
+.item-title {
+  font-size: 14px;
+  width: 410rpx;
+  margin-left: 20rpx;  
+}
+.price-info {
+  font-size: 13px;
+}
+.item-old-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.item-old-price {
+  font-size: 12px;
+  color: gray;
+  text-decoration-line: line-through;     /* 定义删除线 */
+}
+.item-counts {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20rpx;
+}
+/* end */
+
+/* 下边框横线(分割线) start */
+.splitter {
+  border-bottom: solid 1rpx;
+  border-color: #e0e0e0;
+}
+/* end */
+
+/* 配送方式 快递运费 合计 等信息 start */
+.order-info {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-size: 14px;
+}
+.info-line {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+}
+.lable-words {
+  flex-grow: 1;
+}
+.remark-info {
+  padding: 20rpx;
+}
+.remark {
+  background-color: #f4f4f4;
+  width: 98%;
+  height: 50rpx;
+  border-radius: 5rpx;
+  font-size: 13px;
+}
+.remark-holder {
+  color: #c0c0c0;
+  font-size: 13px;
+}
+/* end */
+
+/* 底部提交订单 start */
+.bottom-operator {
+    background-color: white;
+    height: 100rpx;
+    /* 固定底部不可滑动 */
+    position:fixed; 
+    bottom: 0;
+    width: 750rpx;
+    
+    display: flex;
+    flex-direction: row;
+}
+.total-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 36rpx 20rpx;
+  width: 65%;
+}  
+.total-words {
+  color: gray;
+}
+.total-amount {
+  color: #ff6699;
+  font-weight: bold;
+  margin-left: 10rpx;
+}
+.submit-order {
+    color: white;
+    background-color: #ff6699;
+    width: 35%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100rpx;
+}
+/* end */

@@ -1,0 +1,12 @@
+<!-- 商品列表的结果文字显示 -->
+<view class="item-desc-bar">
+    <view class="item-desc-title">{{titleName}}</view>
+</view>
+
+<!-- 3. 导入模板 -->
+<import src="/pages/template/itemList/itemList"/>
+<!-- 4. 使用模板
+is   把模板名写入
+data  传入外部参数，可以使json对象 -->
+<template is="itemList" data="{{newItemList:itemList}}"></template>
+<!-- 5. 导入样式到当前页面对应的acss中 -->

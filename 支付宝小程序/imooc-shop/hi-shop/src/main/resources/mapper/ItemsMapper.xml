@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.imooc.mapper.ItemsMapper" >
+  <resultMap id="BaseResultMap" type="com.imooc.pojo.Items" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="cat_id" property="catId" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="header_images" property="headerImages" jdbcType="VARCHAR" />
+    <result column="belong_address" property="belongAddress" jdbcType="VARCHAR" />
+    <result column="price_discount" property="priceDiscount" jdbcType="INTEGER" />
+    <result column="price_normal" property="priceNormal" jdbcType="INTEGER" />
+    <result column="is_discount" property="isDiscount" jdbcType="INTEGER" />
+    <result column="discounts" property="discounts" jdbcType="VARCHAR" />
+    <result column="like_counts" property="likeCounts" jdbcType="INTEGER" />
+    <result column="sell_counts" property="sellCounts" jdbcType="INTEGER" />
+    <result column="is_24h_deliver" property="is24hDeliver" jdbcType="BIT" />
+    <result column="service_desc" property="serviceDesc" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="tags" property="tags" jdbcType="VARCHAR" />
+    <result column="is_new" property="isNew" jdbcType="BIT" />
+    <result column="is_recommend" property="isRecommend" jdbcType="BIT" />
+    <result column="can_be_searched" property="canBeSearched" jdbcType="BIT" />
+    <result column="is_on" property="isOn" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>

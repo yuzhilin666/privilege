@@ -1,0 +1,105 @@
+page {
+  display: flex;
+  flex-direction: column;       /* 整体竖向排列 */
+  background-color: #f2f5f8;
+}
+
+
+/* 粉色虚线框 */
+.unPickMe {
+  border-style:dashed; 
+  border-color:#ff6699;
+  border-width:0px;
+}
+.pickMe {
+  border-style:dashed; 
+  border-color:#ff6699;
+  border-width:2px;
+}
+
+/* 地址信息栏 start */
+.address-outter {
+  margin-top: 25rpx;
+}
+.address-info {
+  background-color: white;
+  height: 86rpx;
+  padding: 26rpx;
+  font-size: 14px;
+  
+  border-bottom: solid 1px;
+  border-color: #f2f5f8;
+}
+.address-line {
+  display: flex;
+  flex-direction: row;
+}
+.address-desc {
+  color: gray;
+  line-height: 60rpx;
+}
+/* end */
+
+/* 操作栏 start */
+.operator {
+  background-color: white;
+  height: 50rpx;
+  padding: 20rpx;
+  font-size: 14px;
+  color: gray;
+
+  display: flex;
+  flex-direction: row;
+}
+.set-default{
+  flex-grow: 1;
+}
+.oper-ico {
+  width: 30rpx;
+  height: 30rpx;
+}
+.oper-block {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+  margin-left: 50rpx;
+
+}
+.display-words {
+  margin-left: 10rpx;
+  line-height: 36rpx;
+}
+/* end */
+
+
+/* 底部提交订单 start */
+.bottom-operator {
+    background-color: white;
+    height: 100rpx;
+    /* 固定底部不可滑动 */
+    position:fixed; 
+    bottom: 0;
+    width: 750rpx;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.confirm-choose {
+  color: #3a3932;
+  background-color: #ffe817;
+  width: 50%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 100rpx;
+}
+
+.add-new-address {
+    color: white;
+    background-color: #ff6699;
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100rpx;
+}
+/* end */

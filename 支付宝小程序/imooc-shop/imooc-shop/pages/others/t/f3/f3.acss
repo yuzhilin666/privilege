@@ -1,0 +1,41 @@
+page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-container {
+    width: 300px;
+    height: 300px;
+    background-color: #c9394a;
+    border-radius: 20px;
+    padding: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-end; */
+    align-content: space-between;
+}
+
+.demo-point {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.row1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.row3 {
+    width: 100%;
+}

@@ -1,0 +1,25 @@
+<image 
+  src="/resources/course/img.png" 
+  class="img"
+  style="background-color:lightgreen"
+  mode="bottom left"
+  />
+
+  <!--
+    mode: 图片显示的缩放模式
+    1. scaleToFill  图片宽高完全拉伸或缩放到image标签进行填充
+    2. aspectFit    保证长边显示，宽高按照纵横比缩放
+    3. aspectFill   保证短边显示，宽高按照纵横比缩放
+    4. widthFix     宽度不变，高度自动变化，保证原图比例
+
+    mode: 图片显示的裁剪模式
+    1. top:   不缩放图片，只显示顶部区域
+    2. bottom:   不缩放图片，只显示底部区域
+    3. center:   不缩放图片，只显示中间区域
+    4. left:   不缩放图片，只显示左边区域
+    5. right:   不缩放图片，只显示右边区域
+    6. top left   不缩放图片，只显示左上角区域
+    7. top right    不缩放图片，只显示右上角区域
+    8. bottom left 不缩放图片，只显示左下角区域
+    9. bottom right 不缩放图片，只显示右下角区域
+    -->

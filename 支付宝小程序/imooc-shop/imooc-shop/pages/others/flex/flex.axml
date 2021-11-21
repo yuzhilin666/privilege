@@ -1,0 +1,39 @@
+<!-- <view class="box" style="background-color:black;">
+  <view class="item green">1</view>
+  <view class="item red" >2</view>
+  <view class="item blue">3</view>
+
+  <view class="item yellow" style="line-height:150px;">4</view>
+  <view class="item pink" style="line-height:100px;">5</view>
+  <view class="item-stretch lightgreen" style="line-height:50px;">6</view>
+
+  <view class="item gray">7</view>
+  <view class="item-stretch orange" >8</view>
+</view> -->
+
+<!-- <view class="box" style="background-color:black;">
+  <view class="item green">1</view>
+  <view class="item red" >2</view>
+  <view class="item blue">3</view>
+
+  <view class="item yellow">4</view>
+  <view class="item pink" >5</view>
+  <view class="item lightgreen">6</view>
+
+  <view class="item gray">7</view>
+  <view class="item-stretch orange" >8</view>
+</view> -->
+
+<!-- 用于演示容器内部元素的属性 -->
+<view class="box" style="background-color:black;">
+  <view class="item green">1</view>
+  <view class="item red" >2</view>
+  <view class="item blue">3</view>
+
+  <view class="item yellow">4</view>
+  <view class="item pink" >5</view>
+  <view class="item lightgreen">6</view>
+
+  <view class="item gray">7</view>
+  <view class="item orange" >8</view>
+</view>

@@ -1,0 +1,39 @@
+<view class="demo-words">
+  {{username}}
+</view>
+
+<view class="demo-words">
+  My name is {{student.name}},
+  I am {{student.age}} years old,
+  My height is {{student.height}}.
+</view>
+
+<view a:if="{{student.married}}" class="demo-words">
+  Tom 结婚了
+</view>
+<view a:if="{{!student.notmarried}}" class="demo-words">
+  Tom 还没结婚
+</view>
+
+<block a:if="{{student.age < 18}}" class="demo-words">
+  未成年
+</block>
+<block a:elif="{{student.age >= 18 && student.age < 60}}" class="demo-words">
+  成年
+</block>
+<block a:else class="demo-words">
+  老年
+</block>
+
+<view hidden="{{true}}" class="demo-words">
+  隐藏
+</view>
+<view hidden="{{false}}" class="demo-words">
+  显示
+</view>
+
+<view hidden="{{student.score >= 60 ? true : false}}" class="demo-words">
+  不合格
+</view>
+
+

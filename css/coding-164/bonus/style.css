@@ -1,0 +1,274 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+
+@keyframes fadeIn{
+	form{
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.fadeIn{
+	transform: translateY(100px);
+	opacity: 0;
+	animation: fadeIn 1s;
+	animation-fill-mode: forwards;
+}
+.fadeInDelay{
+	animation-delay: 1s;
+}
+
+header{
+	background:linear-gradient(to bottom, #3A2CAC, #631D9F);
+	height: 280px;
+	padding: 20px;
+}
+
+header nav{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+header nav a{
+	color: #f0f0f0;
+	text-decoration: none;
+}
+header nav a:hover{
+	color:#f90;
+}
+header nav .user{
+	float:right;
+}
+header nav li{
+	display:inline-block;
+	padding-right: 40px;
+}
+
+header .headerMain{
+	width: 730px;
+	color: #f0f0f0;
+	margin: 50px auto;
+}
+header .headerMain .introduction{
+	float:right;
+}
+header .headerMain h1{
+	line-height:70px;
+}
+
+.banner{
+	width: 690px;
+	padding: 20px;
+	margin: 0 auto;
+	margin-top: -105px;
+	background: #fff;
+	box-shadow: 0 0 8px rgba(0,0,0,.3);
+}
+.banner ul{
+	text-align: center;
+	font-size:0;
+}
+.banner ul li{
+	font-size: 14px;
+	display: inline-block;
+	height: 160px;
+	width: 180px;
+	/* background:red; */
+	text-align: center;
+}
+.banner ul li .feature{
+	margin: 20px auto;
+	background:#f90;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.main{
+	margin: 100px auto;
+	width: 720px;
+	/* background:red; */
+}
+.main .block{
+	margin-bottom: 100px;
+	margin-left: -20px;
+}
+.main .block .blockText{
+	float:left;
+	width: 260px;
+	line-height: 50px;
+	color: #999;
+	font-size: 24px;
+	margin-left: 20px;
+}
+.main .block .blockText h2{
+	font-size:36px;
+	margin-bottom: 50px;
+}
+.main .block img{
+	float:left;
+	width: 440px;
+	height: 235px;
+	margin-left: 20px;
+}
+.main .block::after{
+	content:'';
+	clear:both;
+	display: block;
+}
+
+
+footer{
+	/* position: fixed; */
+	/* bottom:0; */
+	width: 100%;
+	font-size:12px;
+	color:#999;
+	text-align:center;
+}
+footer .footerContent{
+	/* width: 1000px; */
+	/* margin: 0 auto; */
+	/* background:red; */
+}
+
+@keyframes rolling {
+	from{
+		background-position: 0 0;
+	}
+	to{
+		background-position: 30px 0;
+	}
+}
+.progress{
+	display:none;
+	position: absolute;
+	width: 280px;
+	height:15px;
+	left:50%;
+	margin-left: -140px;
+	top:22px;
+	border-radius:15px;
+	border: 1px solid #999;
+	/* background:red; */
+	background: linear-gradient(135deg, red 0%, red 33%, orange 33%, orange 66%, red 66%, red 100%);
+	background-size:30px 15px;
+	animation: rolling .6s linear infinite;
+	/* background-repeat: no-repeat; */
+}
+.progress.show{
+	display: block;
+}
+
+.dialogWrapper{
+	display: none;
+	position: fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	perspective: 500px;
+}
+.dialogWrapper.show{
+	display:block;
+}
+
+.dialogWrapper .mask{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.3);
+}
+
+@keyframes slideIn{
+	from{
+		transform: translate(-50%, -50%) rotateX(-90deg);
+	}
+	80%{
+		transform: translate(-50%, -50%) rotateX(10deg);
+	}
+	to{
+		transform: translate(-50%, -50%) rotateX(0deg);
+	}
+}
+
+.dialogWrapper .dialog{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	width:500px;
+	height:300px;
+	/* margin-left: -250px;
+	margin-top: -150px; */
+	transform-style: preserve-3d;
+	transform-origin: 50% 50%;
+	transform: translate(-50%, -50%);
+	background:white;
+}
+.dialogWrapper.show .dialog{
+	animation: slideIn .4s;
+	animation-fill-mode: forwards;
+}
+
+.dialogWrapper .dialog .title{
+	height: 50px;
+	line-height: 50px;
+	padding: 0 30px;
+	border: 1px solid #f0f0f0;
+	font-size: 20px;
+}
+.dialogWrapper .dialog .body{
+	padding: 30px 80px;
+}
+
+.dialogWrapper .dialog .body li{
+	line-height: 50px;
+	font-size:20px;
+}
+
+.dialogWrapper .dialog .body li label{
+	display: inline-block;
+	width: 100px;
+}
+
+.dialogWrapper .dialog .body li input{
+	font-size:20px;
+	border: 0 none;
+	border-bottom:1px solid #ccc;
+	width:230px;
+}
+
+.dialogWrapper .dialog .body li input:focus{
+	outline:0 none;
+}
+
+.dialogWrapper .dialog .body li.operateWrapper{
+	margin-top: 20px;
+}
+.dialogWrapper .dialog .body li.operateWrapper button{
+	width: 140px;
+	height: 40px;
+	background:white;
+	border: 1px solid #999;
+	font-size:20px;
+	letter-spacing: 1em;
+	text-indent: 1em;
+	cursor: pointer;
+	margin-right: 50px;
+}
+
+.dialogWrapper .dialog .body li.operateWrapper button.primary{
+	background:#4990E2;
+	border-color: #4990E2;
+	color:white;
+}
+.dialogWrapper .dialog .body li.operateWrapper button:last-of-type{
+	margin-right:0;
+}

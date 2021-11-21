@@ -1,0 +1,85 @@
+<!-- 收货地址为空的情况 -->
+<navigator url="/pages/orders/addressList/addressList">
+    <view class="empty-address" hidden="{{addressEmpty}}">
+        <image src="/resources/icon/smallIco/location.png" class="location-ico"/>
+        <view class="write-address">        
+            请填写收货地址    
+        </view>
+        <image src="/resources/icon/smallIco/arrow-left.png" class="arrow-left-ico"/>
+    </view>
+</navigator>
+<!-- 收货地址不为空，查询有地址列表的情况 -->
+<navigator url="/pages/orders/addressList/addressList?addressChooseId={{addressInfo.id}}">
+    <view class="full-address" hidden="{{addressFull}}">
+        <view class="contact-info">
+            <view>收货人：</view>
+            <view>{{addressInfo.receiver}}</view>
+            <view>{{addressInfo.mobile}}</view>
+        </view>
+        <view class="address-info">
+            <image src="/resources/icon/smallIco/location.png" class="location-ico"/>
+            <!-- <view class="address-province">            江苏        </view> -->
+            <view class="address-city">{{addressInfo.city}}</view>
+            <!-- <view class="address-district">            白下区        </view> -->
+            <view class="address-desc">{{addressInfo.descAddress}}</view>
+            <image src="/resources/icon/smallIco/arrow-left.png" class="arrow-left-ico"/>
+        </view>
+    </view>
+</navigator>
+
+<view class="orders splitter">
+    <block a:for="{{preOrderItemList}}">
+        <view class="item">
+            <image src="{{item.item.cover}}" class="items-cover"/>
+            <view class="item-title">                                
+               {{item.item.name}}        
+            </view>
+            <view class="price-info">
+                <view class="item-old-line">
+                    <view class="item-old-price">                                                
+                        ￥{{item.item.priceNormalYuan}}                                 
+                </view>
+                </view>
+                <view class="item-price">                                        
+                    ￥{{item.item.priceDiscountYuan}}              
+                </view>
+                <view class="item-counts">
+                    <view>{{item.counts}}        </view>
+                    <view>件</view>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>
+<!-- 配送方式 快递运费 合计 等信息 -->
+<view class="order-info">
+    <view class="info-line splitter">
+        <view class="lable-words">运送方式:</view>
+        <view>全国包邮</view>
+    </view>
+    <view class="info-line splitter">
+        <view class="lable-words">快递费用:</view>
+        <view>￥0.00</view>
+    </view>
+    <view class="info-line splitter">
+        <view class="lable-words">合计:</view>
+        <view>￥{{checkAllTotalAmount}}</view>
+    </view>
+    <view class="remark-info">
+        <input type="text" placeholder="订单备注" onInput="setRemark" placeholder-class="remark-holder" class="remark"/>
+    </view>
+</view>
+<!-- 底部提交订单 -->
+<view class="bottom-operator">
+    <view class="total-info">
+        <view class="total-words">                    
+            总计:            
+        </view>
+        <view class="total-amount">                  
+            ￥{{checkAllTotalAmount}}   
+        </view>
+    </view>
+    <view class="submit-order" onTap="submitOrder">            
+        提交订单      
+    </view>
+</view>

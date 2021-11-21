@@ -1,0 +1,67 @@
+page {
+  display: flex;
+  flex-direction: column;       /* 整体竖向排列 */
+  background-color: #f2f5f8;
+}
+
+/* 收货地址 start */
+.myaddress {
+  margin-top: 20rpx;
+}
+.address-line {
+  background-color: white;
+
+  display: flex;
+  flex-direction: row;
+  /* 纵轴垂直居中 */
+  align-items:center; 
+
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+}
+.border-line {
+  border-bottom: solid 1rpx;
+  border-color: #e0e0e0;
+}
+.ico-label {
+  width: 180rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items:center; 
+}
+.address-ico {
+  width: 36rpx;
+  height: 36rpx;
+}
+.address-lable {
+  color: gray;
+  font-size: 13px;
+  margin-left: 10rpx;
+}
+.user-address {
+  font-size: 13px;
+} 
+.area-choose {
+  width: 500rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/* end */
+
+
+/* 底部结算栏 start */
+.bottom-done {
+    background-color: #ff6699;
+    position:fixed; 
+    bottom: 0;
+    width: 750rpx;
+}
+.done {
+    color: white;
+    background-color: #ff6699;
+    font-size: 16px;
+}
+/* end */
